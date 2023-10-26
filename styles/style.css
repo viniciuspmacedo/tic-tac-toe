@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.square {
+    border: 1px solid salmon;
+    width: 100px;
+    display: inline-block;
+    height: 100px;
+    background-color: #FFFFFF
+}
+
+.o, .x{
+    position: relative;
+}
+
+.o::after{
+    content: "\2B55";
+}
+
+.x::after{
+    content: "\274C";
+}
+
+.o::after, .x::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    line-height: 100px;
+    font-size: 40px;
+}
+
